@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>381</string>
+	<key>AMApplicationVersion</key>
+	<string>2.4</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>echo $1 &amp;&amp;
+echo $1 | sed 's/([^)]*)//g; s/^[-+][^a-z,A-Z]*//g; s/:[a-z,A-Z]*/:/g; s/:[^:]*;/:/g' &amp;&amp;
+echo $1 | sed 's/).*//g; s/[-+][^(]*(//g' &amp;&amp;
+echo $1 | sed 's/ *(.*//g'
+echo $1 | sed 's/^[^:]*//g; s/^[^:]*:[^(]*//; s/ [a-z,A-Z]*:/#/g; s/\;//; s/([^)]*)[^a-z,A-Z]*//g;' | tr '#' '\n'
+
+</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>1</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>E7B1E368-ABCF-4995-A1D0-7B11232155EF</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>76EA286B-32F3-4F6D-8129-A2FA01B2FC13</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>F6E193E8-6784-4D82-90A1-EB1C12FFE6B8</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>607.500000:1364.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	set returnValue to ""	set iterator to 1	set newline to "
+"		repeat with nextLine in input		if iterator is equal to 1 then			--declaration							else if iterator is equal to 2 then			--description			display dialog "Describe method: " &amp; item 2 of input default answer ""			set methodDescription to the text returned of the result						if methodDescription is equal to "" then				return "// Method description is required" &amp; newline &amp; item 1 of input			end if						if item 4 of input is equal to "+" then				set returnValue to "	" &amp; "[static] " &amp; methodDescription			else				set returnValue to "	" &amp; methodDescription			end if								else if iterator is equal to 3 then			--return value SKIP					else if iterator is equal to 4 then			--static recognize					else if length of nextLine is greater than 0 then			if iterator is equal to 5 then				set returnValue to returnValue &amp; newline			end if						--parameters			display dialog "Describe param: " &amp; nextLine default answer ""			set paramDescription to the text returned of the result			set returnValue to returnValue &amp; newline &amp; "	@param " &amp; nextLine &amp; newline &amp; "		" &amp; paramDescription					end if				set iterator to (iterator + 1)	end repeat		if item 3 of input is not equal to "void" then		set returnValue to returnValue &amp; newline		--return value		display dialog "Describe return value: " &amp; item 3 of input default answer ""		set returnDescription to the text returned of the result				if returnDescription is equal to "" then			return "// Method return value description is required" &amp; newline &amp; item 1 of input		end if				set returnValue to returnValue &amp; newline &amp; "	@return " &amp; returnDescription	end if		return newline &amp; "/**" &amp; newline &amp; returnValue &amp; newline &amp; "*/" &amp; newline &amp; item 1 of inputend run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>8944C95E-CCFB-44DE-BE15-A0CD7BF64938</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>F962E4D2-D705-4E4C-9498-0A7304D5549A</string>
+				<key>UUID</key>
+				<string>BFB0F1E9-4A90-4B1B-8E87-7B0F8BEF1D92</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>607.500000:1001.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>22F61950-9B22-4931-BA13-17C814EB8C3C</key>
+		<dict>
+			<key>from</key>
+			<string>F6E193E8-6784-4D82-90A1-EB1C12FFE6B8 - F6E193E8-6784-4D82-90A1-EB1C12FFE6B8</string>
+			<key>to</key>
+			<string>BFB0F1E9-4A90-4B1B-8E87-7B0F8BEF1D92 - BFB0F1E9-4A90-4B1B-8E87-7B0F8BEF1D92</string>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>2E7DBB61-5C23-4D2E-A1B5-C293E965AD78</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>declaration</string>
+			<key>value</key>
+			<string>-(id) initWithImage:(UIImage *)image andTitle:(NSString *)text toView:(UIView *)mainView;</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>988BB7C7-513E-45B7-94F0-066E0FD69FA3</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>return</string>
+			<key>value</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>681D1976-C267-46FB-BFB5-58319D88AA18</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>methodName</string>
+			<key>value</key>
+			<string>hide</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>509A2D33-5A66-461F-91CA-57126EBFA6D6</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>params</string>
+			<key>value</key>
+			<string>nil</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>D682C2FA-1DBB-4F23-977C-0569754AB0CB</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>returnType</string>
+			<key>value</key>
+			<string>void</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>1CBB939D-24BB-4B13-BAF9-1F5795201E94</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>methodDescription</string>
+			<key>value</key>
+			<string> </string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>21835DDA-B6A5-480C-B9D9-6A63C7FD627D</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>paramsDescription</string>
+			<key>value</key>
+			<string> @param nil#    #</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>28590834-3E4C-493F-9219-FC99BF8E0154</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>returnDescription</string>
+			<key>value</key>
+			<string>nil</string>
+		</dict>
+	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>serviceApplicationBundleID</key>
+		<string>com.apple.dt.Xcode</string>
+		<key>serviceApplicationPath</key>
+		<string>/Applications/Xcode.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.text</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.text</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.servicesMenu</string>
+	</dict>
+</dict>
+</plist>
